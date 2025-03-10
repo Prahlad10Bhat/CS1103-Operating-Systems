@@ -20,12 +20,18 @@ while true; do
 	read -p "Select an option (1-3): " option
 	case $option in
 		1) # Display current memory usage
+		   echo "waiting for 10 seconds..."
+		   sleep 10
 		   display_memory_usage
 		   ;;
 		2) # Monitor memory usage in real-time
+		   echo "waiting for 10 seconds..."
+		   sleep 10
 		   monitor_memory_usage
 		   ;;
 		3) # Exit the script
+		   echo "waiting for 10 seconds..."
+		   sleep 10
 		   echo "Exiting the memory monitor. Goodbye!"
 		   exit 0
 		   ;;
@@ -34,5 +40,4 @@ while true; do
 		   ;;
 	esac
 	echo "" 
-sleep 5
 done
